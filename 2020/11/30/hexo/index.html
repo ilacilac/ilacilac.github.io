@@ -6,25 +6,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hexo">
-    <title>헥소(Hexo)를 사용하여 gihub.io 블로그 만들기 - Hexo</title>
+    <title> - Hexo</title>
     <meta name="author" content="John Doe">
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"John Doe","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"헥소(Hexo)란👀?헥소 공식페이지에 설명되어있기를,빠르고 간단하고 강력한 블로그 프래임워크라고 설명되어있습니다.\n그리고 플러그인과 다양한 테마를 지원하므로마음에 드는 테마를 다운받아 쉽게 적용하여 사용할 수 있습니다.\n설치환경\nNode.js (Should be at least Node.js 10.13, recommends 12.0 or higher)\nGit\n\n설치npm을 통해 전역으로 설치해줍니다.\nnpm install -g hexo-cli123원하는 디렉토리명으로 &#96;hexo init&#96;을 한 후,해당 디렉토리로 이동하여 노드 모듈을 설치해줍니다.\n\n$ hexo init hexo$ cd hexo$ npm install\n12345678910111213141516171819설치 후 터미널에서 &#96;hexo server&#96;명령어를 실행해 줍니다.로컬 서버가 구동되면 &#96;http:&#x2F;&#x2F;localhost:4000&#96; 주소로 들어갑니다.Hello world로 시작한 포스트 글이 보이면 성공입니다😊!## 저장소 생성Hexo 블로그의 경우에는 두가지의 저장소를 만들어 주어야 합니다.1. GitHub Page로 배포되는 저장소2. 원본소스가 저장되어있는 저장소## GitHub 저장소 생성아래 사이트 참고 바랍니다.https:&#x2F;&#x2F;pages.github.com&#x2F;## GitHub 저장소 주소 설정배포하기 전, 헥소 설정 파일에서 배포할 저장소를 설정해주어야 합니다.루트 경로에서 _config.yml파일을 열어줍니다.\n\ndeploy:type: ‘’\n12위 항목을 아래와같이 설정합니다.\n\ndeploy:type: gitrepo: 저장소 주소(예: https://github.com/사용자명/사용자명.github.io.git)branch: master\n1234## 배포 플러그인 설치&#96;hexo-deployer-git&#96;플러그인을 설치를 하여 GitHub 페이지에 배포해 줍니다.\n\nnpm install –save hexo-deployer-git\n12345## 정적 리소스 생성하기아래 명령어를 실행하면 정적 리소스가 생성됩니다.이 파일들이 실제로 깃허브 페이지에 배포될 파일들입니다.\n\n$ hexo generate\n1234## 배포하기아래 명령어를 실행하면 생성한 정적 리소스를 배포하게 됩니다.\n\n$ hexo deploy\n12정적 리소스를 삭제하는 명령어는 아래 명령어를 사용하면 됩니다.\n\n$ hexo clean\n12345## Reference&gt; [헥소(HEXO)를 이용한 깃허브 블로그 만들기](&#39;https:&#x2F;&#x2F;velog.io&#x2F;@recordboy&#x2F;%ED%97%A5%EC%86%8CHEXO%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0&#39;)\n","dateCreated":"2020-11-30T20:48:39+09:00","dateModified":"2020-11-30T21:48:27+09:00","datePublished":"2020-11-30T20:48:39+09:00","description":"","headline":"헥소(Hexo)를 사용하여 gihub.io 블로그 만들기","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2020/11/30/hexo/"},"publisher":{"@type":"Organization","name":"John Doe","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"http://example.com/2020/11/30/hexo/","keywords":"hexo, blog, framework"}</script>
-    <meta name="description" content="헥소(Hexo)란👀?헥소 공식페이지에 설명되어있기를,빠르고 간단하고 강력한 블로그 프래임워크라고 설명되어있습니다. 그리고 플러그인과 다양한 테마를 지원하므로마음에 드는 테마를 다운받아 쉽게 적용하여 사용할 수 있습니다. 설치환경 Node.js (Should be at least Node.js 10.13, recommends 12.0 or higher) G">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"John Doe","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"-–\ntitle: 헥소(Hexo)를 사용하여 gihub.io 블로그 만들기\ndate: 2020-11-30 20:48:39\ntags:\n- hexo\n- blog\n- framework\n-–\n# 헥소(Hexo)란👀?\n헥소 공식페이지에 설명되어있기를,\n빠르고 간단하고 강력한 블로그 프래임워크라고 설명되어있습니다.\n그리고 플러그인과 다양한 테마를 지원하므로\n마음에 드는 테마를 다운받아 쉽게 적용하여 사용할 수 있습니다.\n## 설치환경\n- Node.js (Should be at least Node.js 10.13, recommends 12.0 or higher)\n- Git\n## 설치\nnpm을 통해 전역으로 설치해줍니다.\n1$ npm install -g hexo-cli\n\n원하는 디렉토리명으로 hexo init을 한 후,\n해당 디렉토리로 이동하여 노드 모듈을 설치해줍니다.\n123$ hexo init hexo$ cd hexo$ npm install\n\n설치 후 터미널에서 hexo server명령어를 실행해 줍니다.\n로컬 서버가 구동되면 http://localhost:4000 주소로 들어갑니다.\nHello world로 시작한 포스트 글이 보이면 성공입니다😊!\n## 저장소 생성\nHexo 블로그의 경우에는 두가지의 저장소를 만들어 주어야 합니다.\n\\1. GitHub Page로 배포되는 저장소\n\\2. 원본소스가 저장되어있는 저장소\n## GitHub 저장소 생성\n아래 사이트 참고 바랍니다.\nhttps://pages.github.com/\n## GitHub 저장소 주소 설정\n배포하기 전, 헥소 설정 파일에서 배포할 저장소를 설정해주어야 합니다.\n루트 경로에서 _config.yml파일을 열어줍니다.\n12deploy: type: &#39;&#39;\n\n위 항목을 아래와같이 설정합니다.\n1234deploy:  type: git  repo: 저장소 주소(예: https:&#x2F;&#x2F;github.com&#x2F;사용자명&#x2F;사용자명.github.io.git)  branch: master\n\n## 배포 플러그인 설치\nhexo-deployer-git플러그인을 설치를 하여 GitHub 페이지에 배포해 줍니다.\n1npm install --save hexo-deployer-git\n\n## 정적 리소스 생성하기\n아래 명령어를 실행하면 정적 리소스가 생성됩니다.\n이 파일들이 실제로 깃허브 페이지에 배포될 파일들입니다.\n1$ hexo generate\n\n## 배포하기\n아래 명령어를 실행하면 생성한 정적 리소스를 배포하게 됩니다.\n1$ hexo deploy\n\n정적 리소스를 삭제하는 명령어는 아래 명령어를 사용하면 됩니다.\n1$ hexo clean\n\n## Reference\n헥소(HEXO)를 이용한 깃허브 블로그 만들기\n","dateCreated":"2020-11-30T21:28:46+09:00","dateModified":"2020-11-30T21:54:38+09:00","datePublished":"2020-11-30T21:28:46+09:00","description":"","headline":"","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2020/11/30/hexo/"},"publisher":{"@type":"Organization","name":"John Doe","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"http://example.com/2020/11/30/hexo/"}</script>
+    <meta name="description" content="-– title: 헥소(Hexo)를 사용하여 gihub.io 블로그 만들기 date: 2020-11-30 20:48:39 tags: - hexo - blog - framework -– # 헥소(Hexo)란👀? 헥소 공식페이지에 설명되어있기를, 빠르고 간단하고 강력한 블로그 프래임워크라고 설명되어있습니다. 그리고 플러그인과 다양한 테마를 지원하므로 마음에">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="헥소(Hexo)를 사용하여 gihub.io 블로그 만들기">
+<meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/2020/11/30/hexo/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="헥소(Hexo)란👀?헥소 공식페이지에 설명되어있기를,빠르고 간단하고 강력한 블로그 프래임워크라고 설명되어있습니다. 그리고 플러그인과 다양한 테마를 지원하므로마음에 드는 테마를 다운받아 쉽게 적용하여 사용할 수 있습니다. 설치환경 Node.js (Should be at least Node.js 10.13, recommends 12.0 or higher) G">
+<meta property="og:description" content="-– title: 헥소(Hexo)를 사용하여 gihub.io 블로그 만들기 date: 2020-11-30 20:48:39 tags: - hexo - blog - framework -– # 헥소(Hexo)란👀? 헥소 공식페이지에 설명되어있기를, 빠르고 간단하고 강력한 블로그 프래임워크라고 설명되어있습니다. 그리고 플러그인과 다양한 테마를 지원하므로 마음에">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-11-30T11:48:39.000Z">
-<meta property="article:modified_time" content="2020-11-30T12:48:27.074Z">
+<meta property="article:published_time" content="2020-11-30T12:28:46.002Z">
+<meta property="article:modified_time" content="2020-11-30T12:54:38.476Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="hexo">
-<meta property="article:tag" content="blog">
-<meta property="article:tag" content="framework">
 <meta name="twitter:card" content="summary">
     
     
@@ -321,12 +318,12 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            헥소(Hexo)를 사용하여 gihub.io 블로그 만들기
+            (no title)
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2020-11-30T20:48:39+09:00">
+    <time datetime="2020-11-30T21:28:46+09:00">
 	
 		    Nov 30, 2020
     	
@@ -340,35 +337,66 @@
     
     <div class="post-content markdown">
         <div class="main-content-wrap">
-            <h1 id="헥소-Hexo-란👀"><a href="#헥소-Hexo-란👀" class="headerlink" title="헥소(Hexo)란👀?"></a>헥소(Hexo)란👀?</h1><p>헥소 공식페이지에 설명되어있기를,<br>빠르고 간단하고 강력한 블로그 프래임워크라고 설명되어있습니다.</p>
-<p>그리고 플러그인과 다양한 테마를 지원하므로<br>마음에 드는 테마를 다운받아 쉽게 적용하여 사용할 수 있습니다.</p>
-<h2 id="설치환경"><a href="#설치환경" class="headerlink" title="설치환경"></a>설치환경</h2><ul>
-<li>Node.js (Should be at least Node.js 10.13, recommends 12.0 or higher)</li>
-<li>Git</li>
-</ul>
-<h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><p><code>npm</code>을 통해 전역으로 설치해줍니다.</p>
-<figure class="highlight plain"><figcaption><span>npm install -g hexo-cli</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">원하는 디렉토리명으로 &#96;hexo init&#96;을 한 후,</span><br><span class="line">해당 디렉토리로 이동하여 노드 모듈을 설치해줍니다.</span><br></pre></td></tr></table></figure>
+            <p>-–</p>
+<p>title: 헥소(Hexo)를 사용하여 gihub.io 블로그 만들기</p>
+<p>date: 2020-11-30 20:48:39</p>
+<p>tags:</p>
+<p>- hexo</p>
+<p>- blog</p>
+<p>- framework</p>
+<p>-–</p>
+<p><strong># 헥소(Hexo)란👀?</strong></p>
+<p>헥소 공식페이지에 설명되어있기를,</p>
+<p>빠르고 간단하고 강력한 블로그 프래임워크라고 설명되어있습니다.</p>
+<p>그리고 플러그인과 다양한 테마를 지원하므로</p>
+<p>마음에 드는 테마를 다운받아 쉽게 적용하여 사용할 수 있습니다.</p>
+<p><strong>## 설치환경</strong></p>
+<p>- Node.js (Should be at least Node.js 10.13, recommends 12.0 or higher)</p>
+<p>- Git</p>
+<p><strong>## 설치</strong></p>
+<p><code>npm</code>을 통해 전역으로 설치해줍니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<p>$ hexo init hexo<br>$ cd hexo<br>$ npm install</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">설치 후 터미널에서 &#96;hexo server&#96;명령어를 실행해 줍니다.</span><br><span class="line">로컬 서버가 구동되면 &#96;http:&#x2F;&#x2F;localhost:4000&#96; 주소로 들어갑니다.</span><br><span class="line">Hello world로 시작한 포스트 글이 보이면 성공입니다😊!</span><br><span class="line"></span><br><span class="line">## 저장소 생성</span><br><span class="line">Hexo 블로그의 경우에는 두가지의 저장소를 만들어 주어야 합니다.</span><br><span class="line"></span><br><span class="line">1. GitHub Page로 배포되는 저장소</span><br><span class="line">2. 원본소스가 저장되어있는 저장소</span><br><span class="line"></span><br><span class="line">## GitHub 저장소 생성</span><br><span class="line">아래 사이트 참고 바랍니다.</span><br><span class="line">https:&#x2F;&#x2F;pages.github.com&#x2F;</span><br><span class="line"></span><br><span class="line">## GitHub 저장소 주소 설정</span><br><span class="line">배포하기 전, 헥소 설정 파일에서 배포할 저장소를 설정해주어야 합니다.</span><br><span class="line">루트 경로에서 _config.yml파일을 열어줍니다.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>원하는 디렉토리명으로 <code>hexo init</code>을 한 후,</p>
+<p>해당 디렉토리로 이동하여 노드 모듈을 설치해줍니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init hexo</span><br><span class="line">$ cd hexo</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 
-<p>deploy:<br>type: ‘’</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">위 항목을 아래와같이 설정합니다.</span><br></pre></td></tr></table></figure>
+<p>설치 후 터미널에서 <code>hexo server</code>명령어를 실행해 줍니다.</p>
+<p>로컬 서버가 구동되면 <code>http://localhost:4000</code> 주소로 들어갑니다.</p>
+<p>Hello world로 시작한 포스트 글이 보이면 성공입니다😊!</p>
+<p><strong>## 저장소 생성</strong></p>
+<p>Hexo 블로그의 경우에는 두가지의 저장소를 만들어 주어야 합니다.</p>
+<p>\1. GitHub Page로 배포되는 저장소</p>
+<p>\2. 원본소스가 저장되어있는 저장소</p>
+<p><strong>## GitHub 저장소 생성</strong></p>
+<p>아래 사이트 참고 바랍니다.</p>
+<p><a target="_blank" rel="noopener" href="https://pages.github.com/">https://pages.github.com/</a></p>
+<p><strong>## GitHub 저장소 주소 설정</strong></p>
+<p>배포하기 전, 헥소 설정 파일에서 배포할 저장소를 설정해주어야 합니다.</p>
+<p>루트 경로에서 _config.yml파일을 열어줍니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: &#39;&#39;</span><br></pre></td></tr></table></figure>
 
-<p>deploy:<br>type: git<br>repo: 저장소 주소(예: <a target="_blank" rel="noopener" href="https://github.com/%EC%82%AC%EC%9A%A9%EC%9E%90%EB%AA%85/%EC%82%AC%EC%9A%A9%EC%9E%90%EB%AA%85.github.io.git">https://github.com/사용자명/사용자명.github.io.git</a>)<br>branch: master</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 배포 플러그인 설치</span><br><span class="line">&#96;hexo-deployer-git&#96;플러그인을 설치를 하여 GitHub 페이지에 배포해 줍니다.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>위 항목을 아래와같이 설정합니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 저장소 주소(예: https:&#x2F;&#x2F;github.com&#x2F;사용자명&#x2F;사용자명.github.io.git)</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
-<p>npm install –save hexo-deployer-git</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 정적 리소스 생성하기</span><br><span class="line">아래 명령어를 실행하면 정적 리소스가 생성됩니다.</span><br><span class="line">이 파일들이 실제로 깃허브 페이지에 배포될 파일들입니다.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><strong>## 배포 플러그인 설치</strong></p>
+<p><code>hexo-deployer-git</code>플러그인을 설치를 하여 GitHub 페이지에 배포해 줍니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 
-<p>$ hexo generate</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 배포하기</span><br><span class="line">아래 명령어를 실행하면 생성한 정적 리소스를 배포하게 됩니다.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><strong>## 정적 리소스 생성하기</strong></p>
+<p>아래 명령어를 실행하면 정적 리소스가 생성됩니다.</p>
+<p>이 파일들이 실제로 깃허브 페이지에 배포될 파일들입니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>$ hexo deploy</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">정적 리소스를 삭제하는 명령어는 아래 명령어를 사용하면 됩니다.</span><br></pre></td></tr></table></figure>
+<p><strong>## 배포하기</strong></p>
+<p>아래 명령어를 실행하면 생성한 정적 리소스를 배포하게 됩니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>$ hexo clean</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">## Reference</span><br><span class="line">&gt; [헥소(HEXO)를 이용한 깃허브 블로그 만들기](&#39;https:&#x2F;&#x2F;velog.io&#x2F;@recordboy&#x2F;%ED%97%A5%EC%86%8CHEXO%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0&#39;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>정적 리소스를 삭제하는 명령어는 아래 명령어를 사용하면 됩니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+
+<p><strong>## Reference</strong></p>
+<p><a href="*'https://velog.io/@recordboy/%ED%97%A5%EC%86%8CHEXO%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0'*"><strong>헥소(HEXO)를 이용한 깃허브 블로그 만들기</strong></a></p>
 
             
 
@@ -377,31 +405,10 @@
     </div>
     <div id="post-footer" class="post-footer main-content-wrap">
         
-            <div class="post-footer-tags">
-                <span class="text-color-light text-small">TAGGED IN</span><br/>
-                
-    <a class="tag tag--primary tag--small t-none-link" href="/tags/blog/" rel="tag">blog</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/framework/" rel="tag">framework</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/hexo/" rel="tag">hexo</a>
-
-            </div>
-        
         
             <div class="post-actions-wrap">
     <nav>
         <ul class="post-actions post-action-nav">
-            <li class="post-action">
-                
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/11/30/hello-world/"
-                    data-tooltip="Hello World"
-                    aria-label="PREVIOUS: Hello World"
-                >
-                    
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
-                    </a>
-            </li>
             <li class="post-action">
                 
                     <a
@@ -409,6 +416,20 @@
                         aria-hidden="true"
                     >
                         
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                    </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2020/11/30/hello-world/"
+                    data-tooltip="Hello World"
+                    aria-label="NEXT: Hello World"
+                >
+                    
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
@@ -502,25 +523,25 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/11/30/hello-world/"
-                    data-tooltip="Hello World"
-                    aria-label="PREVIOUS: Hello World"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                     </a>
             </li>
             <li class="post-action">
                 
-                    <a
-                        class="post-action-btn btn btn--disabled"
-                        aria-hidden="true"
-                    >
-                        
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2020/11/30/hello-world/"
+                    data-tooltip="Hello World"
+                    aria-label="NEXT: Hello World"
+                >
+                    
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
